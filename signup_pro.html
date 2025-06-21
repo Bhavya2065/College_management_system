@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - My College</title>
+    <link rel="stylesheet" href="login_signup.css">
+    <script src="signup_pro.js"></script>
+</head>
+
+<body>
+    <div class="auth-container">
+        <form onsubmit="return validateForm()" action="signup.php" method="post">
+            <h2>Sign Up</h2>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter Password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Mobile number:</label>
+                <input type="number" id="number" name="number" placeholder="Enter Mobile Number" required>
+            </div>
+
+            <button type="submit">Sign Up</button>
+            <p><a href="login_pro.html" class="toggle-link">Already have an account? Login</a></p>
+        </form>
+    </div>
+</body>
+</html>

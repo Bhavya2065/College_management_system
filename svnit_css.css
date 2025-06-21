@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #00274d;
+    padding: 20px;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 1s ease;
+    /* give the transition to the logo */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge logo on hover */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ff6600;
+    border-radius: 5px;
+    color: white;
+}
+
+.hero {
+    background: url('https://old.ckpcet.ac.in/images/site/bg.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    z-index: 2;
+    /* Ensure text is above the overlay */
+    max-width: 800px;
+    margin-bottom: 20px;
+    /* Add space between text and button */
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    /* Add space between the text and button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc5200;
+    transform: translateY(-3px);
+    /* Slight hover effect for the button */
+}
+
+.news,
+.departments {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.news h2,
+.departments h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #00274d;
+}
+
+.news-items,
+.department-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.news-item,
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.news-item:hover,
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.read-more {
+    text-decoration: none;
+    color: #00274d;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #ff6600;
+}
+
+footer {
+    background-color: #00274d;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-links {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff6600;
+    /* Link hover effect */
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+}
+
+h1 {
+    padding: 0;
+}
+
+.about-section p {
+    margin-bottom: 10px;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.about-section {
+    padding: 10px;
+}
+
+.contact-section ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.contact-section {
+    /* display: flex;
+    flex-direction: row; */
+    padding: 10px;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+}
+
+.contain {
+    flex: 1;
+}
+
+.time-table-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.wrap-contents {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: stretch; /* Ensure all flex items have the same height */
+}
+
+.wrap-content {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 200px;
+}
+
+.wrap-content h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wrap-content p {
+    text-align: center;
+    margin: 0;
+}
+
+.wrap-content:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adds space around the image */
+}
+
+/* Responsive image styling */
+.responsive-image {
+    max-width: 80%; /* Ensure the image never exceeds 80% of the screen width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better UI */
+}
+
+.table-contain {
+    width: 70%;
+}
+
